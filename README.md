@@ -35,7 +35,7 @@ in the open world.
 
 **Running the project**
 
--There is no need to install this project, the log_analysis.py file needs to be run using Python. If all prerequisites are met then a localhost url wil appear on the terminal. The same needs to be visited on a browser.
+- There is no need to install this project, the log_analysis.py file needs to be run using Python. If all prerequisites are met then a localhost url wil appear on the terminal. The same needs to be visited on a browser.
 
 **Acknowledgments**
 
@@ -61,5 +61,5 @@ Implemented for obtaining total misses on the articles per day,
 create view miss as 
 select left(cast(time as varchar), 10) as miss_day, count(*) as misses 
 from log where log.status != '200 OK' 
-'''
 group by miss_day;
+```
